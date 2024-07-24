@@ -1,52 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Textural Triangle Canvas - DEMO">
-    <meta property="og:image" content="https://i.imgur.com/XqNrB9W.png">
-    <title>Textural Triangle Canvas - DEMO</title>
-    <link rel="stylesheet" href="./assets/style/main.css">
+    <title>Tree Map com Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="canvas-box">
-        <h1>Textural Triangle Canvas</h1>
-        <div class="inputs">
-            <div class="input">
-                <label id="language">Language</label>
-                <select id="language-value">
-                    <option value="en">English</option>
-                    <option value="pt-br">Brasilian Portuguese</option>
-                    <option value="sp">Spanish</option>
-                </select>
-            </div>
-            <div class="input">
-                <label id="clay">% Clay</label>
-                <input type="number" id="clay-value">
-            </div>
-            <div class="input">
-                <label id="silt">% Silt</label>
-                <input type="number" id="silt-value">
-            </div>
-            <div class="input">
-                <label id="sand">% Sand</label>
-                <input type="number" id="sand-value">
-            </div>
-            <div class="button">
-                <button type="button" id="btn-generate">Generate</button>
-            </div>
-        </div>
-        <canvas id="myCanvas" width="700" height="700"></canvas>
-        <div class="results">
-            <p id="sum">Sum: 0%</p>
-        </div>
-    </div>
+    <canvas id="treeMapCanvas" width="1000" height="500"></canvas>
+    <script src="treemap.js"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/gh/netosep/textural-triangle-canvas/TexturalTriangleCanvas.min.js"></script>
-<script src="./assets/js/demo.js"></script>
-
 </html>
